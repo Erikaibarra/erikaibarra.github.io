@@ -1,0 +1,363 @@
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  background-color:#6699FF;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+  width: 50px;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 70%;
+}
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 100%;
+  }
+}
+nav ul a {
+  color: darkblue;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+body {
+  background: #DFDFDF;
+  font-family: "Cardo", serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  padding: 50px 2% 250px;
+}
+
+.hero {
+  position:static;
+  background: url("fondo_index.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: right;
+  color: #fff;
+  padding-top: 95px;
+  padding-right:30px;
+  min-height: 650px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+}
+.hero h1 span {
+  font-size: 10px;
+  color: #CCFF00;
+  border-bottom: 2px solid  #CCFF00;
+  padding-bottom: 5px;
+  line-height: 3;
+}
+
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+//imagenes
+//imagenes
+img {
+    margin: 20px;
+    border: 5px solid #eee;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+ 
+img:hover {
+     -webkit-box-shadow: 0 15px 10px #777;
+     -moz-box-shadow: 0 15px 10px #777;
+     box-shadow: 0 15px 10px #777;
+     box-shadow:0px 0px 20px 0px #000;
+    -moz-box-shadow:0px 0px 20px 0px #000;
+    -webkit-box-shadow:0px 0px 20px 0px #000;      
+}
+
+//info
+article {
+  width: 200%;
+  padding-left: 100px;
+  margin-left: 100px;
+  font-size: 10px;
+  background: white;
+  box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+  border-block-color:black;
+}
+
+article h1{
+font-family: cursive;
+font-size: 300%;
+color: #7383E9 ;
+}
+
+article h3{
+font-family: cursive;
+font-size: 300%;
+color: #000000;
+text-align: left;
+}
+article h4{
+font-family: cursive;
+font-size: 200%;
+color: #000000;
+text-align: left;
+}
+
+article ul li{
+list-style-type: circle;
+color: #07284A ;
+font-size: 20px;
+}
+
+p.azul::selection {
+  background:#EC8626 ;
+}
+
+article p {
+  margin: 100;
+  color: black;
+  line-height: 2.0;
+  font-size: 18px;
+}
+article p + p {
+  margin-top: .10em;
+}
+@media (min-width: 900px) {
+  article {
+    margin: 10px;
+    padding: 2em;
+  }
+}
+@media (min-width: 300px) {
+  article {
+    margin: 100px;
+  }
+}
+
+//estilofooter
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background: url("https://akrocard.com/wp-content/uploads/2015/05/fondo-degradado-azul.jpg") no-repeat center center fixed;
+    padding: 10px 0;
+}
+.footer-col{
+   width: 30%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: lightyellow;
+  height: 2px;
+  box-sizing: border-box;
+  width: 200px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #007331;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: black;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: whitesmoke;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #007331 ;
+  background-color: black;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
